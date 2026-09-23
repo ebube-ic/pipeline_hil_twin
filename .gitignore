@@ -1,0 +1,83 @@
+# =====================================================================
+# Tier 1: MATLAB & Simulink (Plant Simulation)
+# =====================================================================
+# Simulink project and cache folders
+slprj/
+*.slxc
+*.asv
+*.autosave
+*.bak
+
+# Code generation & compiler builds
+*_ert_rtw/
+*_grt_rtw/
+codegen/
+*.mex*
+
+# Temporary run artifacts
+*.sdi
+*.matlab
+m3i_cache/
+
+# =====================================================================
+# Tier 2: CODESYS & PLC Runtime
+# =====================================================================
+# Compile cache and backup files
+*.compileinfo
+*.bak
+*.opt
+*.project.archive
+*.tpy
+*.tpi
+
+# CODESYS runtime logs
+*.log
+*.dump
+
+# =====================================================================
+# Tier 3: Python / C++ (Analytical Redundancy & FTC)
+# =====================================================================
+# Python environment & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.env
+
+# C/C++ compilation outputs
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+build/
+bin/
+
+# =====================================================================
+# Tier 4: SCADA & Historian (Ignition + PostgreSQL)
+# =====================================================================
+# Database dumps and local storage
+*.sql.gz
+*.dump
+db_data/
+
+# Ignition temporary runtime files
+*.idb
+*.gwbk_tmp
+
+# =====================================================================
+# Operating System & IDE Artifacts
+# =====================================================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# VS Code / JetBrains workspace settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
