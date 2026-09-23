@@ -46,7 +46,7 @@ The goal for Week 1 was building and numerically validating the physical hydraul
 
 The pipeline plant was developed in Simscape Fluids and tuned to eliminate numerical chattering, algebraic loop singularities, and non-physical vacuum pressures:
 
-![Simscape Pipeline Plant Diagram](docs/images/Screenshot%20(1350).png)
+![Simscape Pipeline Plant Diagram](docs/images/Screenshot%201.png)
 
 * **Actuator Sizing & Input Filtering**: The emergency shut-off ball valve bore was matched directly to the 300 mm pipe diameter ($0.0707\text{ m}^2$) with a $1\times 10^{-6}\text{ m}^2$ seat leakage area to eliminate hard boundary discontinuities. A 50 ms first-order input filter was applied to the valve command to model rapid pneumatic actuator travel while maintaining DAE solver integrity.
 * **Controlled VFD Ramp**: The centrifugal pump uses a 2-second speed ramp from 0 to 1800 RPM, establishing smooth steady-state delivery head without launching premature startup transients.
@@ -58,7 +58,7 @@ The pipeline plant was developed in Simscape Fluids and tuned to eliminate numer
 
 A rapid emergency shutdown (ESD) closure was commanded at $t = 5.0\text{ s}$ to validate water hammer propagation across the 1 km line:
 
-![Pipeline Transient Pressure Waveforms](docs/images/Screenshot%20(1349).png)
+![Pipeline Transient Pressure Waveforms](docs/images/Screenshot%202.png)
 
 The simulated response matches analytical Joukowsky transient theory:
 
